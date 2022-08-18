@@ -1,6 +1,6 @@
 ## 回答
 
-![image](https://user-images.githubusercontent.com/43722788/185442985-5f45f7d8-c66c-47be-85d3-3ec0b433bb51.png)
+![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/db-modeling-2/DB2%20Diagram.drawio.png)
 
 
 ### 考えたこと
