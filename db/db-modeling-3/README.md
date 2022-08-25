@@ -61,7 +61,7 @@ https://user-images.githubusercontent.com/43722788/186717932-7e16968d-f7ae-4dd8-
 - そのカードをどのカテゴリに移動させるかの宣言（ここでは parentId で登録される）
 ![スクリーンショット 2022-08-26 1 03 39](https://user-images.githubusercontent.com/43722788/186717640-3be5cbbf-6294-483d-898f-d4cc4adefed5.png)
 
-- 順番を入れ替える宣言。
+- 順番を入れ替える宣言
 ![スクリーンショット 2022-08-26 1 07 16](https://user-images.githubusercontent.com/43722788/186717604-1f08bdd1-f346-4252-9d30-b2c991c1435e.png)
   - どのカードの前にまたは後ろに移動させたか
   - 下から上に持っていった場合は listBefore、上から下は listAfter で判別される
