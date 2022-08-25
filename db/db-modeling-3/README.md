@@ -43,16 +43,22 @@
 
 ## food for thought
 
+https://user-images.githubusercontent.com/43722788/186717932-7e16968d-f7ae-4dd8-90a4-982e2f70587d.mov
+
 - notion のテーブルで確認した
 
+![スクリーンショット 2022-08-26 0 59 59](https://user-images.githubusercontent.com/43722788/186717832-84b2e760-4c46-4699-a507-d5e9772a3c7e.png)
 ページ（ID: dea24fcf-...）に存在するカード（ID: aeff1eb5-...）を動かした場合、ページ ID（dea24fcf-...）に対してリクエストが送られる
-
-// ここに画像はる
 
 リクエスト内容を詳しく見ると、operations という以下の 5 つパラメータが存在する
 
+![スクリーンショット 2022-08-26 1 02 47](https://user-images.githubusercontent.com/43722788/186717727-6b32a24d-0eb0-4743-8c1e-b6ec023fec26.png)
 - カード（ID: aeff1eb5-...）に対して update をかける宣言
+
+![スクリーンショット 2022-08-26 1 03 39](https://user-images.githubusercontent.com/43722788/186717640-3be5cbbf-6294-483d-898f-d4cc4adefed5.png)
 - そのカードをどのカテゴリに移動させるかの宣言（ここでは parentId で登録される）
+
+![スクリーンショット 2022-08-26 1 07 16](https://user-images.githubusercontent.com/43722788/186717604-1f08bdd1-f346-4252-9d30-b2c991c1435e.png)
 - 順番を入れ替える宣言。
 
   - どのカードの前にまたは後ろに移動させたか
@@ -67,7 +73,10 @@
   command: "listBefore"
 ```
 
+![スクリーンショット 2022-08-26 1 13 30](https://user-images.githubusercontent.com/43722788/186717548-c18fb183-6015-432c-953d-93986de651df.png)
 - そのカードの更新日時をアップデートする宣言
+
+![スクリーンショット 2022-08-26 1 16 04](https://user-images.githubusercontent.com/43722788/186717506-aa07bbec-ce42-4183-8107-4d04b145049e.png)
 - そのカードが属するカテゴリの更新日時をアップデートする宣言
 
 まとめると、裏でどのような DB を持っているかは正確なことはわからないが、トランザクションを見る限り、直前直後の ID を持っているような感じがした。
