@@ -40,3 +40,34 @@
 ### 直前直後のドキュメント ID を使った並び替え方法
 
 ![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/db-modeling-3/DB3%20Diagram%20task2-example.drawio.png)
+
+## food for thought
+
+- notion のテーブルで確認した
+
+ページ（ID: dea24fcf-...）に存在するカード（ID: aeff1eb5-...）を動かした場合、ページ ID（dea24fcf-...）に対してリクエストが送られる
+
+// ここに画像はる
+
+リクエスト内容を詳しく見ると、operations という以下の 5 つパラメータが存在する
+
+- カード（ID: aeff1eb5-...）に対して update をかける宣言
+- そのカードをどのカテゴリに移動させるかの宣言（ここでは parentId で登録される）
+- 順番を入れ替える宣言。
+
+  - どのカードの前にまたは後ろに移動させたか
+  - 下から上に持っていった場合は listBefore、上から下は listAfter で判別される
+  - 以下の場合は、カード（ID: aeff1eb5-...）をカード(ID: ed84c61c-...)の前に持っていくように下から上にドラッグしたということを表す
+
+```
+  args: {
+    "before": "aeff1eb5-...",
+    "id": "ed84c61c-..."
+  },
+  command: "listBefore"
+```
+
+- そのカードの更新日時をアップデートする宣言
+- そのカードが属するカテゴリの更新日時をアップデートする宣言
+
+まとめると、裏でどのような DB を持っているかは正確なことはわからないが、トランザクションを見る限り、直前直後の ID を持っているような感じがした。
