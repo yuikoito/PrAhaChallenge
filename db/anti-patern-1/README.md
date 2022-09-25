@@ -3,7 +3,10 @@
 - 将来的に、例えばtagごとでフィルタリングをかける機能を実装する場合、今の作りのままでも表現はできるが上述の通りかなり検索コストがかかる
 
 ## 課題2
-- 
+
+![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/anti-patern-1/Diagram.drawio.png)
+
+
 
 ## 課題3
 - 例えばブログサービスを作っている場合に、最初は記事に関連付けるタグを１つとして設計していたので、Articleテーブルにtagを追加していたが、仕様変更でタグを２つ以上持つことになった。ここで本来であればtag部分は分割すべきだったが、目先の工数をケチった結果Articleテーブル内にそのままtagを配列で複数もつ設計に変更した
