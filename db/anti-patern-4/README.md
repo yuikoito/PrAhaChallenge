@@ -11,7 +11,7 @@
 ![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/anti-patern-4/Diagram.drawio.png)
 
 閉包テーブルで対応
-今回はイベントがどういう構成なのか（例えば CRUD なのか）わからないので、閉包テーブルぐらいでしか対応出来ない気がする・・
+今回はイベントがどういう構成なのか（例えば CRUD なのか）わからないので、閉包テーブルぐらいでしか対応出来ないと思うのですが、他パターンあれば知りたいです
 
 ## 課題３
 
