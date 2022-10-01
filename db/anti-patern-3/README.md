@@ -7,6 +7,8 @@
 
 ## 課題２
 
+![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/anti-patern-3/Diagram.drawio.png)
+
 それぞれの中間テーブルで対応。
 Comment を Manga 用、Novel 用で分けることも考えたが、Comment の内容自体は共通のため、中間テーブルでの対応が良いかと思った。
 
