@@ -1,9 +1,9 @@
 ## 課題１
 
-- Type を見るまで、belong_to_id が Manga, Novel どちらに対してのものなのかがわからない。
-  - 親である Manga, Novel から見て、属している Comment を見つけにくい（先に Type で grep した上で belong_to_id の検索をしないといけない）
+- Type を見るまで、belongs_to_id が Manga, Novel どちらに対してのものなのかがわからない。
+  - 親である Manga, Novel から見て、属している Comment を見つけにくい（先に Type で grep した上で belongs_to_id の検索をしないといけない）
 - 正規化ができない
-  - belong_to_id だけを見て、それが Manga, Novel のどちらに紐づくかがわからないため、その ID が本当に存在する ID なのかどうかがわからない。
+  - belongs_to_id だけを見て、それが Manga, Novel のどちらに紐づくかがわからないため、その ID が本当に存在する ID なのかどうかがわからない。
 
 ## 課題２
 
