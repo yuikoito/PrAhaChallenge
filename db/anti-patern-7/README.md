@@ -10,7 +10,8 @@
 
 ![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/anti-patern-7/Diagram.drawio.png)
 
-
+※これはイミュータブルデータモデリングのつもりで書いています。
+もし退会以外にステータスが増える場合はテーブルが増える設定。
 
 ## 課題３
 
