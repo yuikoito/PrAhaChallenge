@@ -8,7 +8,7 @@
 
 ## 課題２
 
-![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/anti-patern-6/Diagram.drawio.png)
+![image](https://raw.githubusercontent.com/yuikoito/PrAhaChallenge/master/db/anti-patern-7/Diagram.drawio.png)
 
 
 
