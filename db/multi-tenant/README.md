@@ -53,9 +53,8 @@
   - 例えば今回だと、テナント ID に一致する行にアクセスでき、かつ自分のアカウントのテナント ID の行のみアクセスできるポリシー
 - コネクション取得時に必要な ID など検索につかうものをセットする
 
-参考
-https://times.hrbrain.co.jp/entry/postgresql-row-level-security
+## 参考
 
-https://labs.septeni.co.jp/entry/2022/03/28/193223
-
-https://www.postgresql.jp/document/9.6/html/ddl-rowsecurity.html
+- https://times.hrbrain.co.jp/entry/postgresql-row-level-security
+- https://labs.septeni.co.jp/entry/2022/03/28/193223
+- https://www.postgresql.jp/document/9.6/html/ddl-rowsecurity.html
