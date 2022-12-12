@@ -56,7 +56,7 @@ NULL IS NOT NULL
 0
 ```
 
-※https://paiza.io/ja/projects/new で確認
+※https://paiza.io/ja/projects/new でMySQL実行環境にて確認
 
 ## 課題２
 
