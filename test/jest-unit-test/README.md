@@ -56,3 +56,54 @@ describe("test for sumOfArray", () => {
     - ループを読みやすく簡潔にする
     - スコープを最小限にする
   - テストケースは簡潔なものにする
+
+## 課題 4
+
+- 引数を受け取り、何らかの値を返却する関数を 3 つ
+
+```
+function getRandomNumber(min: number, max: number): number {
+  return Math.floor(Math.random() * (max + 1 - min)) + min;
+}
+```
+
+```
+function concatenateStrings(str1: string, str2: string): string {
+  return str1 + str2;
+}
+```
+
+```
+function isNumberEven(num: number): boolean {
+  return num % 2 === 0;
+}
+```
+
+- jest に関するクイズ
+
+```
+次のうち、Jestでテストを開始する方法でないものはどれですか？
+A) it()
+B) test()
+C) describe()
+D) assert()
+
+テストにおける非同期コードの処理に関して、Jestのデフォルトの動作はどのようなものですか？
+A) Jest は、非同期コードが終了するのを待ってから残りのテストを実行します。
+B) Jest は、非同期コードが終了する前にテストの残りの部分を実行します。
+C) Jest は非同期コードを別のスレッドで実行します。
+D) Jest は非同期コードを別プロセスで実行します。
+```
+
+## 課題 5
+
+- https://github.com/electron/forge/blob/main/tools/test-globber.ts
+- https://github.com/electron/forge/blob/main/tools/utils.ts
+
+### 学んだこと
+
+- 細かくファイルわけがされており、諸々のテストを test-globber.ts でまとめて管理している。そのため`"test": "xvfb-maybe cross-env LINK_FORGE_DEPENDENCIES_ON_INIT=1 TS_NODE_PROJECT='./tsconfig.test.json' TS_NODE_FILES=1 mocha './tools/test-globber.ts'",`と書くだけでテストが実行できるし、test-globber.ts の中身は非常にわかりやすい。
+
+- 変数 packages は、モジュール内で定義された関数を使用して取得されるパッケージ情報の配列なので、それをまわすという使い方をするだけで各テストが実行できる。それを取得するための抽象レイヤーとして utils.ts が存在している
+
+- for ループを使用して、変数 testFiles 内のすべてのファイルを require() 関数で読み込むことができる
